@@ -2,7 +2,7 @@ import json
 import os
 import re
 from pathlib import Path
-from typing import Tuple
+from typing import Tuple, Dict, List
 import nbtlib
 from nbtlib.tag import Compound, String, Int
 import requests
@@ -11,6 +11,18 @@ TOKEN: str = os.getenv("API_TOKEN", "")
 GH_TOKEN: str = os.getenv("GH_TOKEN", "")
 PROJECT_ID: str = os.getenv("PROJECT_ID", "")
 FILE_URL: str = f"https://paratranz.cn/api/projects/{PROJECT_ID}/files/"
+
+# --- 新增配置项 ---
+# 1. 在 Paratranz 项目中，存放需要合并的 json 文件的目录路径。
+#    请确保以 '/' 结尾。脚本会合并此目录下所有 .json 文件。
+#    例如: "kubejs/assets/kubejs/lang/parts/"
+MERGE_SOURCE_PATH: str = "kubejs/assets/vm/lang/"
+
+# 2. 合并后生成的单一 zh_cn.json 文件的完整路径和文件名。
+#    例如: "CNPack/kubejs/assets/kubejs/lang/zh_cn.json"
+MERGE_OUTPUT_FILE: str = "CNPack/kubejs/assets/vm/lang/zh_cn.json"
+# --- 新增配置项结束 ---
+
 
 if not TOKEN or not PROJECT_ID:
     raise EnvironmentError("环境变量 API_TOKEN 或 PROJECT_ID 未设置。")
@@ -81,7 +93,9 @@ def save_translation(zh_cn_dict: dict[str, str], path: Path) -> None:
                 source_json: dict = json.load(f1)
             keys = source_json.keys()
             for key in keys:
-                source_json[key] = zh_cn_dict[key]
+                # 仅当key存在于翻译字典时才更新，防止KeyError
+                if key in zh_cn_dict:
+                    source_json[key] = zh_cn_dict[key]
             json.dump(source_json, f, ensure_ascii=False, indent=4, separators=(",", ":"))
         except IOError:
             print(f"{source_path}路径不存在，文件按首字母排序！")
@@ -106,7 +120,7 @@ def process_translation(file_id: int, path: Path) -> dict[str, str]:
         zh_cn_dict = {}
 
     # 检查路径是否包含quests
-    is_quest_file = "quests" in str(path)
+    is_quest_file = "vm" in str(path)
 
     for key, value in zip(keys, values):
         # 确保替换 \\u00A0 和 \\n
@@ -197,30 +211,57 @@ def normal_json2_ftb_desc(origin_en_us):
 def main() -> None:
     get_files()
     ftbquests_dict = {}
-    for file_id, path in zip(file_id_list, file_path_list):
-        if "TM" in path:  # 跳过 TM 文件
+    
+    # --- 新增逻辑 ---
+    # 用于存放所有待合并文件的键值对
+    merged_translations: Dict[str, str] = {}
+    # --- 新增逻辑结束 ---
+
+    for file_id, path_str in zip(file_id_list, file_path_list):
+        if "TM" in path_str:  # 跳过 TM 文件
             continue
-        zh_cn_dict = process_translation(file_id, Path(path))
-        zh_cn_list.append(zh_cn_dict)
-        if "kubejs/assets/quests/lang/" in path:
-            ftbquests_dict = ftbquests_dict | zh_cn_dict
-        save_translation(zh_cn_dict, Path(path))
-        print(f"已从Patatranz下载到仓库：{re.sub('en_us.json', 'zh_cn.json', path)}")
+        
+        path = Path(path_str)
+        zh_cn_dict = process_translation(file_id, path)
+
+        # --- 修改的核心逻辑 ---
+        # 检查文件路径是否是需要合并的路径
+        if path_str.startswith(MERGE_SOURCE_PATH) and path_str.endswith(".json"):
+            # 如果是，则更新到合并字典中，暂不保存
+            merged_translations.update(zh_cn_dict)
+            print(f"已暂存待合并文件：{path_str}")
+        else:
+            # 如果不是，则按原逻辑处理
+            zh_cn_list.append(zh_cn_dict)
+            if "kubejs/assets/quests/lang/" in path_str:
+                ftbquests_dict.update(zh_cn_dict)
+            save_translation(zh_cn_dict, path)
+            print(f"已从Paratranz下载到仓库：{re.sub('en_us.json', 'zh_cn.json', str(path))}")
+        # --- 修改结束 ---
+
+    # --- 新增逻辑 ---
+    # 在循环结束后，如果合并字典中有内容，则将其排序后写入目标文件
+    if merged_translations:
+        print(f"正在合并 {len(merged_translations)} 个键值对到 {MERGE_OUTPUT_FILE}...")
+        output_path = Path(MERGE_OUTPUT_FILE)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        with open(output_path, "w", encoding="UTF-8") as f:
+            json.dump(merged_translations, f, ensure_ascii=False, indent=4, separators=(",", ":"))
+        print(f"成功合并并保存文件到：{MERGE_OUTPUT_FILE}")
+    # --- 新增逻辑结束 ---
+
     if(len(ftbquests_dict) > 0):
         snbt_dict = normal_json2_ftb_desc(ftbquests_dict)
-        # json_data = json.dumps(snbt_dict,ensure_ascii=False, indent=4, separators=(",", ":"))
-        # Escape quotation marks in the translated data
         json_data = escape_quotes(snbt_dict)
-        # Convert the loaded JSON data to NBT format
         nbt_data = json_to_nbt(json_data)
-        # Format the NBT structure as a pretty-printed SNBT string
         formatted_snbt_string = format_snbt(nbt_data)
-        # Optionally save the formatted SNBT to a file
         try:
             with open('CNPack/config/ftbquests/quests/lang/zh_cn.snbt', 'w', encoding='utf-8') as snbt_file:
                 snbt_file.write(formatted_snbt_string)
         except Exception as e:
             print("该ftbquest版本低于1.21.1")
+
 
 if __name__ == "__main__":
     main()
