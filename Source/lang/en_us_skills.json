@@ -36,8 +36,11 @@
   "skills.spelunker": "Spelunker",
   "skills.spelunker.description": "Gain XP by mining ores!",
   "skills.spelunker.mining": "Mining Speed",
+  "skills.spelunker.mining.description": "Increase Mining Speed",
   "skills.spelunker.fortune": "Fortune",
+  "skills.spelunker.fortune.description": "Increase chance to get extra ore when mining.",
   "skills.spelunker.experience_gained": "Experience Gain",
+  "skills.spelunker.experience_gained.description": "Increase experience gain for level from any source.",
   "skills.spelunker.anvil_cost": "Anvil Cost",
   "skills.spelunker.luck": "Luck",
   "skills.spelunker.luck.description": "Find more loot inside chests."
