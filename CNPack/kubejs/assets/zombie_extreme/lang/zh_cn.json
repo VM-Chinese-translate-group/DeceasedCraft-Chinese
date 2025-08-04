@@ -1,5 +1,5 @@
 {
-  "effect.toxicity": "毒性",
+  "effect.toxicity": "毒素",
   "block.zombie_extreme.black_ops_cargo": "黑色行动货物",
   "subtitles.faceless_idle": "",
   "item.zombie_extreme.cleaver": "切肉刀",
@@ -56,7 +56,7 @@
   "effect.zombie_extreme.radiation_effect": "辐射",
   "item.zombie_extreme.military_suit_leggings": "军用护腿",
   "itemGroup.tabzombie_extreme_tools": "僵尸极限：工具",
-  "effect.zombie_extreme.toxicity": "毒性",
+  "effect.zombie_extreme.toxicity": "毒素",
   "item.zombie_extreme.steel_pickaxe": "钢镐",
   "subtitles.demolisher_hurt": "",
   "item.zombie_extreme.crowbar": "撬棍",
