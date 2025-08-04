@@ -1,6 +1,6 @@
 {
   "login.message": "Press [F7] to open the guide book for guides and quests!",
-  "building.haunted.chest": "§cYou cannot loot chests while the horde is around!",
+  "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",
   "building.haunted.cleared": "§aThe horde has been defeated!",
   "building.haunted.halfway": "§eThe horde seems to be lessening...",
@@ -10,6 +10,5 @@
   "deceasedcraft.horde.playtime_day_end": "ingame days.",
   "deceasedcraft.horde.horde_day_start": "The horde comes for you in",
   "deceasedcraft.horde.horde_day_end": "ingame days.",
-  "item.minecraft.enchanted_book": "Upgrade Parts",
-  "message.hordes.EventStart": "THE HORDE HAS ARRIVED!"
+  "item.minecraft.enchanted_book": "Upgrade Parts"
 }
