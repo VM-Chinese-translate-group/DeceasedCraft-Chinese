@@ -10,7 +10,7 @@
     "block.animal_pen.animal_pen_oak":"动物围栏",
     "block.animal_pen.animal_pen_spruce":"动物围栏",
     "block.animal_pen.animal_pen_warped":"动物围栏",
-    "block.animal_pen.aquarium_block":"水族缸",
+    "block.animal_pen.aquarium_block":"水族箱",
     "category.animal_pen.animal_pen":"Animal Pen Items",
     "display.animal_pen.cooldown":"%2$s冷却时间：%3$s",
     "display.animal_pen.count":"%d",
