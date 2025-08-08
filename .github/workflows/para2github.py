@@ -20,7 +20,7 @@ MERGE_SOURCE_PATH: str = "kubejs/assets/vm/lang/"
 
 # 2. 合并后生成的单一 zh_cn.json 文件的完整路径和文件名。
 #    例如: "CNPack/kubejs/assets/kubejs/lang/zh_cn.json"
-MERGE_OUTPUT_FILE: str = "CNPack/kubejs/assets/vm/lang/zh_cn.json"
+MERGE_OUTPUT_FILE: str = "CNPack/kubejs/assets/deceasedcraft/lang/zh_cn.json"
 # --- 新增配置项结束 ---
 
 
