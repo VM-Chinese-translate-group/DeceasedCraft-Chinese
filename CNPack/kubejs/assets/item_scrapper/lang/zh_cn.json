@@ -1,6 +1,6 @@
 {
     "block.item_scrapper.scrapper_block":"物品拆解台",
-    "creativetab.item_scrapper":"物品滚轮",
+    "creativetab.item_scrapper":"物品拆解台",
     "item.item_scrapper.scrapping_hammer":"拆解锤",
     "item_scrapper.config.max_input_items":"拆解台至多展示的输入物品数量：",
     "item_scrapper.config.max_output_items":"拆解台至多展示的输出物品数量：",
