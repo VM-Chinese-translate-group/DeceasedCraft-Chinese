@@ -1,33 +1,27 @@
 import json
 
-def process_npc_dialogue(input_file, output_file, line_length=35):
-    try:
-        with open(input_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        print(f"错误：找不到文件 {input_file}")
-        return
-    except json.JSONDecodeError:
-        print(f"错误：文件 {input_file} 的JSON格式无效。")
-        return
+# 文件路径
+file_path = 'CNPack\\kubejs\\assets\\deceasedcraft\\lang\\zh_cn.json'
 
+try:
+    # 读取JSON文件内容
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # 遍历JSON数据，移除以'npc.deceasedcraft'开头的键对应的值中的换行符
     for key, value in data.items():
         if key.startswith('npc.deceasedcraft') and isinstance(value, str):
-            cleaned_text = value.replace('\\n', ' ').replace('\n', ' ')
-            
-            if not cleaned_text:
-                continue
+            data[key] = value.replace('\n', '')
 
-            wrapped_text = '\n'.join([cleaned_text[i:i + line_length] for i in range(0, len(cleaned_text), line_length)])
-            data[key] = wrapped_text
+    # 将修改后的内容写回文件
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
-    try:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
-        print(f"处理完成！已将结果保存到 {output_file}")
-    except IOError:
-        print(f"错误：无法写入文件 {output_file}")
+    print(f"文件 '{file_path}' 已成功处理，换行符已被移除。")
 
-input_filename = 'CNPack\\kubejs\\assets\\deceasedcraft\\lang\\zh_cn.json'
-output_filename = 'CNPack\\kubejs\\assets\\deceasedcraft\\lang\\zh_cn.json'
-process_npc_dialogue(input_filename, output_filename)
+except FileNotFoundError:
+    print(f"错误：找不到文件 '{file_path}'。请确保文件存在于当前目录中。")
+except json.JSONDecodeError:
+    print(f"错误：文件 '{file_path}' 不是一个有效的JSON文件。")
+except Exception as e:
+    print(f"处理文件时发生未知错误：{e}")
