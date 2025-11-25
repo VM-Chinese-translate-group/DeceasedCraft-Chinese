@@ -1,5 +1,5 @@
 {
-  "quest.transport": "Transportation",
+  "quest.transport": "§6§lTransportation",
   "quest.transport.train": "Trains",
   "quest.transport.train.steam_engine.subtitle": "Obtained by looting or sequenced assembly.",
   "quest.transport.train.heat_engine.subtitle": "Obtained by looting or sequenced assembly.",
@@ -48,7 +48,7 @@
   "quest.transport.car.canisters.desc_2": "Keep in mind buckets of fuel do not work - Only canisters full of fuel will be accepted.",
   "quest.transport.car.gasstation.title": "Gas Stations",
   "quest.transport.car.gasstation.desc_1": "The gas station block allows for refueling cars without having to use canisters. To use it, park a vehicle nearby, select it in the gas station's menu, and click the square button.",
-  "quest.transport.car.gasstation.desc_2": "The gas station can be refuled using canisters, or by pumping gas using pipes into the sides of the block. Only the sides will accept pipes!",
+  "quest.transport.car.gasstation.desc_2": "The gas station can be refueled using canisters, or by pumping gas using pipes into the sides of the block. Only the sides will accept pipes!",
   "quest.transport.car.bodies.title": "Body",
   "quest.transport.car.bodies.subtitle": "Keeping it all together.",
   "quest.transport.car.bodies.desc_1": "Vehicle frames primarily use steel, aluminum and duroplast.",
@@ -88,7 +88,7 @@
   "quest.transport.planes.furnace_engine.desc_1": "Furnace Engine uses solid fuel such as coal, coal coke, wood and more to power up the plane.",
   "quest.transport.planes.workbench.title": "Plane Workbench",
   "quest.transport.planes.workbench.desc_1": "You'll need a plane workbench to craft Simple Planes aircrafts, it'll require a wood type that you like, and a propeller to craft any type of aircrafts.",
-  "quest.collection": "Collections",
+  "quest.collection": "§6§lCollectibles",
   "quest.collection.badges": "Badges",
   "quest.collection.plushies": "Plushies",
   "quest.collection.discs": "Music Discs"

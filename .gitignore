@@ -12,3 +12,5 @@
 __pycache__
 build
 dist
+.venv
+split_output

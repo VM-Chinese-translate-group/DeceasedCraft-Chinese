@@ -1,5 +1,5 @@
 {
-  "login.message": "Press [F7] to open the guide book for guides and quests!",
+  "login.message": "Press [F7] to open the guide book for guides and quests! First day of the world is a safe day, please take your time to read the guide book.",
   "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",
   "building.haunted.cleared": "§aThe horde has been defeated!",
@@ -10,5 +10,8 @@
   "deceasedcraft.horde.playtime_day_end": "ingame days.",
   "deceasedcraft.horde.horde_day_start": "The horde comes for you in",
   "deceasedcraft.horde.horde_day_end": "ingame days.",
-  "item.minecraft.enchanted_book": "Upgrade Parts"
+  "item.minecraft.enchanted_book": "Upgrade Parts",
+  "deceasedcraft.survivor.signal.message": "Searching for survivor signals...",
+  "deceasedcraft.survivor.signal.none": "None Found",
+  "deceasedcraft.flyer.learn": "You've registered the %s building data into your radar!"
 }
