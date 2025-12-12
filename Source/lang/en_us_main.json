@@ -83,7 +83,7 @@
   "quest.main.district.survivor_radar.subtitle": "Survivors? In this economy?",
   "quest.main.district.survivor_radar.desc_1": "Villagers in DeceasedCraft v5.0 have been removed in favour of special quest NPCs.",
   "quest.main.district.survivor_radar.desc_2": "There are several per district, and completing their quests will allow you to purchase items from them.",
-  "quest.main.district.survivor_radar.desc_3": "Use the survivor radar to locate the nearest NPC.",
+  "quest.main.district.survivor_radar.desc_3": "NPCs can be found with the survivor radar, and active NPC quests can be tracked using F8.",
   "quest.main.district.suburb_residential.title": "Suburb Residential",
   "quest.main.district.suburb_residential.description": "A peaceful neighbourhood of small suburban houses. Mild tempreature. Low threat. Your default spawn location.",
   "quest.main.district.highrise_office.title": "Highrise Office District",
@@ -97,5 +97,5 @@
   "quest.main.district.wasteland.title": "Wasteland",
   "quest.main.district.wasteland.description_1": "A deadly, desolate district ravaged by both a nuclear reactor meltdown and the viral outbreak. Extreme threat. Extreme heat.",
   "quest.main.district.wasteland.description_2": "A gas mask or radiation protection suit is strongly recommended before entering this district.",
-  "quest.main.boss": "§6§lBoss Monsters"
+  "quest.main.boss": "Boss Monsters"
 }

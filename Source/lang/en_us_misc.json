@@ -1,4 +1,12 @@
 {
+  "effectId.deceasedcraft.pistol_ammo_loot": "",
+  "effectId.deceasedcraft.shotgun_ammo_loot": "",
+  "effectId.deceasedcraft.rifle_ammo_loot": "",
+  "effectId.deceasedcraft.sniper_ammo_loot": "",
+  "effectId.deceasedcraft.special_ammo_loot": "",
+  "effectId.deceasedcraft.medic_loot": "",
+  "effectId.deceasedcraft.chef_loot": "",
+  "effectId.deceasedcraft.miner_loot": "",
   "login.message": "Press [F7] to open the guide book for guides and quests! First day of the world is a safe day, please take your time to read the guide book.",
   "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",

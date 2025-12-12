@@ -152,5 +152,13 @@
   "item.deceasedcraft.flyer_multi_convenientstore": "Convenience Store Flyer - Closure Notice",
   "item.deceasedcraft.flyer_multi_gunstore": "Gun Store Flyer - Closure Notice",
   "item.deceasedcraft.flyer_multi_terraceplaza": "Terrace Plaza Mall Flyer - Closure Notice",
+  "item.deceasedcraft.police_badge.description": "§6Has chance to find pistol ammunitions from any containers.",
+  "item.deceasedcraft.outlaw_badge.description": "§6Has chance to find shotgun ammunitions from any containers.",
+  "item.deceasedcraft.army_badge.description": "§6Has chance to find rifle ammunitions from any containers.",
+  "item.deceasedcraft.special_forces_badge.description": "§6Has chance to find sniper ammunitions from any containers.",
+  "item.deceasedcraft.elite_special_forces_badge.description": "§6Has chance to find special ammunitions from any containers.",
+  "item.deceasedcraft.medic_badge.description": "§6Has chance to find medical supplies from any containers.",
+  "item.deceasedcraft.chef_badge.description": "§6Has chance to find foods from any containers.",
+  "item.deceasedcraft.miner_badge.description": "§6Has chance to find ingots from any containers.",
   "itemGroup.deceasedTab": "Deceased Craft"
 }

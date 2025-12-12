@@ -34,6 +34,7 @@ RAW_RULES: List[RawRule] = [
     ("prefix", "quest.collection", "en_us_trans.json"),
     ("regex", r"^suffuse\.gun\.", "en_us_item.json"),
     ("regex", r"^gz\.gun\.", "en_us_item.json"),
+    ("regex", r"^effectId.*", "en_us_misc.json"),
     ("prefix", "quest.intro", "en_us_intro.json"),
     ("prefix", "quest.credits", "en_us_credits.json"),
 ]
