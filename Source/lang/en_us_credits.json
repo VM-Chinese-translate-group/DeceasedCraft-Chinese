@@ -4,7 +4,7 @@
   "quest.credits.title": "The End!",
   "quest.credits.subtitle": "The Story Continues...",
   "quest.credits.description_1": "We hope you've enjoyed DeceasedCraft!",
-  "quest.credits.description_2": "For feedback and suggestions, be sure to check out our Discord.",
-  "quest.credits.description_3": "Feel free to support us on Patreon as we continue improving the experience of this pack!",
-  "quest.credits.description_4": "Special Thanks:\nBogdan: Various code bug fixes\nChinese Translation: VM 汉化组"
+  "quest.credits.description_2": "For feedback and suggestions, be sure to check out our §bDiscord§r.",
+  "quest.credits.description_3": "Feel free to support us on §bPatreon§r as we continue improving the experience of this pack!",
+  "quest.credits.description_4": "Special Thanks:\n§6MrJty§r - The Lost Cities Mod Author\n§6legsandarms§r - Undead Revamped Mod Author\n§6Bogdan_Off§r - Misc. Modding Support\n§6VM 汉化组§r - Chinese Translation"
 }
