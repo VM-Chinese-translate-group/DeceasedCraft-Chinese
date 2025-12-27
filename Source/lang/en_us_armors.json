@@ -6,6 +6,7 @@
   "armors.army_general.description_damage": "§a +50% Melee Damage",
   "armors.army_general.description_as": "§a +15% Attack Speed",
   "tooltip.translation.spacecatasb.settitle.armors.national_army.title": "National Army",
+  "armors.national_army.description_reduction": "§a +20% Damage Reduction",
   "armors.national_army.description_damage": "§a +30% Melee Damage",
   "armors.national_army.description_ranged_damage": "§d +30% Ranged Damage",
   "tooltip.translation.spacecatasb.settitle.armors.un_army.title": "UN Peacekeeper",

@@ -7,7 +7,7 @@
   "effectId.deceasedcraft.medic_loot": "",
   "effectId.deceasedcraft.chef_loot": "",
   "effectId.deceasedcraft.miner_loot": "",
-  "login.message": "Press §6[F7]§r to open the guide book for guides and quests! If this is a new world, you will have one day of safety. Please take your time to read the guide book!",
+  "login.message": "§6Press §b[F7] §6to open the guide book for guides and quests! If this is a new world, you will have §bone§6 day of safety. Please take your time to read the guide book!",
   "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",
   "building.haunted.cleared": "§aThe horde has been defeated!",
@@ -21,5 +21,5 @@
   "item.minecraft.enchanted_book": "Upgrade Parts",
   "deceasedcraft.survivor.signal.message": "Searching for survivor signals...",
   "deceasedcraft.survivor.signal.none": "No signals found.",
-  "deceasedcraft.flyer.learn": "You've registered the %s building data into your radar!"
+  "deceasedcraft.flyer.learn": "Data Registered - You can now locate §b%s§r using your Building Radar!"
 }

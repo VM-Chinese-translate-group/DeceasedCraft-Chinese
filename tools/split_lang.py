@@ -37,6 +37,7 @@ RAW_RULES: List[RawRule] = [
     ("regex", r"^effectId.*", "en_us_misc.json"),
     ("prefix", "quest.intro", "en_us_intro.json"),
     ("prefix", "quest.credits", "en_us_credits.json"),
+    ("regex", r"^(biome|travelerstitles).*", "en_us_biome.json"),
 ]
 
 RULES: List[Rule] = []
