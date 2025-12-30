@@ -1,5 +1,13 @@
 {
-  "login.message": "Press [F7] to open the guide book for guides and quests! First day of the world is a safe day, please take your time to read the guide book.",
+  "effectId.deceasedcraft.pistol_ammo_loot": "",
+  "effectId.deceasedcraft.shotgun_ammo_loot": "",
+  "effectId.deceasedcraft.rifle_ammo_loot": "",
+  "effectId.deceasedcraft.sniper_ammo_loot": "",
+  "effectId.deceasedcraft.special_ammo_loot": "",
+  "effectId.deceasedcraft.medic_loot": "",
+  "effectId.deceasedcraft.chef_loot": "",
+  "effectId.deceasedcraft.miner_loot": "",
+  "login.message": "§6Press §b[F7] §6to open the guide book for guides and quests! If this is a new world, you will have §bone§6 day of safety. Please take your time to read the guide book!",
   "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",
   "building.haunted.cleared": "§aThe horde has been defeated!",
@@ -12,6 +20,6 @@
   "deceasedcraft.horde.horde_day_end": "ingame days.",
   "item.minecraft.enchanted_book": "Upgrade Parts",
   "deceasedcraft.survivor.signal.message": "Searching for survivor signals...",
-  "deceasedcraft.survivor.signal.none": "None Found",
-  "deceasedcraft.flyer.learn": "You've registered the %s building data into your radar!"
+  "deceasedcraft.survivor.signal.none": "No signals found.",
+  "deceasedcraft.flyer.learn": "Data Registered - You can now locate §b%s§r using your Building Radar!"
 }

@@ -1,9 +1,9 @@
 {
-  "quest.intro": "Introduction",
+  "quest.intro": "Useful Hotkeys",
   "quest.intro.subtitle": "Beginners Guide to Modded Minecraft",
-  "quest.intro.hotkeys.title": "Useful Hotkeys",
+  "quest.intro.hotkeys.title": "Hotkey List",
   "quest.intro.hotkeys.subtitle": "The numbers... what do they mean?!",
   "quest.intro.hotkeys.description_1": "Below is a list of hotkeys you might find useful while playing.",
   "quest.intro.hotkeys.description_2": "Feel free to rebind them in the controls menu!",
-  "quest.intro.hotkeys.description_3": "F6: Advancements\nF7: Open QuestBook\nF8: NPC Quest Log\nF9: Voice Chat Menu\nF10: Skill Tree\n\nH: Inspect your body limbs health.\nG: Change gun’s fire mode.\nB: Open Backpack\nF: When holding gun, interact like right click. When using item scrapper table, can be placed on to the table.\nZ: Open Gun’s attachment window.\nI: Open Car and Plane Inventory.\nX: Start Car Engine.\nR: Reload when using gun, throw weapon when using melee weapon.\nV: Melee if gun has a melee weapon.\nC: Crawl/Slide.\nN: Inspect Gun, open night vision.\nM: Open world map.\nDown Arrow: Throttle down simple planes.\nUp Arrow: Throttle up simple planes.\n\\: Open world map settings.\n"
+  "quest.intro.hotkeys.description_3": "§6F6:§r Advancements\n§6F7:§r Quest Book\n§6F8:§r NPC Quest Log\n§6F9:§r Voice Chat Menu\n§6F10:§r Skill Tree\n\n§6H:§r Inspect your body limbs health.\n§6G:§r Change your gun’s fire mode.\n§6B:§r Open Backpack\n§6F:§r When holding a gun, interact as though using right click. When using the item scrapper table, place item on table.\n§6Z:§r Open your gun’s attachment window.\n§6I:§r Open Car and Plane Inventory.\n§6X:§r Start Car Engine.\n§6R:§rWhen holding a gun, reload. When holding a melee weapon, throw weapon.\n§6V:§r Melee if gun has a melee weapon.\n§6C:§r Crawl/Slide.\n§6N:§r Inspect Gun, open night vision.\n§6M:§r Open world map.\n§6Down Arrow:§r Throttle down simple planes.\n§6Up Arrow:§r Throttle up simple planes.\n§6Forward Slash:§r Open world map settings.\n§6Alt+P:§r Parcool Settings"
 }

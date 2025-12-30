@@ -4,7 +4,7 @@
 
 | CurseForge     | 加载器     | 整合包版本         | 汉化维护状态 |
 | :------------- | :--------- | :----------------- | :----------- |
-| [链接](https://www.curseforge.com/minecraft/modpacks/deceasedcraft) | Forge | 1.20.1 0.6.0 | 翻译中       |
+| [链接](https://www.curseforge.com/minecraft/modpacks/deceasedcraft) | Forge | 1.20.1 5.10.4 | 翻译中       |
 
 ---
 
