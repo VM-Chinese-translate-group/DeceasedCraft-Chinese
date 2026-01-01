@@ -63,7 +63,7 @@
   "armors.military_urban.description_movement": "§a +25% Movement Speed",
   "armors.military_urban.description_crit_chance": "§a +10% Critical Chance",
   "tooltip.translation.spacecatasb.settitle.armors.nurse.title": "Nurse",
-  "armors.nurse.description_damage": "§a +200% Melee Damage",
+  "armors.nurse.description_damage": "§a +100% Melee Damage",
   "armors.nurse.description_health": "§6 +50% Bonus Healing",
   "tooltip.translation.spacecatasb.settitle.armors.police.title": "Police Officer",
   "armors.police.description_damage": "§a +15% Melee Damage",
