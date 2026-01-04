@@ -204,7 +204,7 @@
   "quest.tech.power.immersive_windmill_sail.description_1": "Windmill sails have to be attached to the windmill. More sails will increase the amount of SU generated.",
   "quest.tech.power.thermoelectric_generator.title": "Thermoelectric Generator",
   "quest.tech.power.thermoelectric_generator.subtitle": "Hot and Cold",
-  "quest.tech.power.thermoelectric_generator.description_1": "Thermoelectric generators use the difference in tempreature of the two blocks to either side of it to generate power.",
+  "quest.tech.power.thermoelectric_generator.description_1": "Thermoelectric generators use the difference in temperature of the two blocks to either side of it to generate powe",
   "quest.tech.power.thermoelectric_generator.description_2": "A list of blocks that can be used can be found in the Engineer's Manual §6[Power,Wires,Generators > Thermoelectric Generator]§r.",
   "quest.tech.bullet_automation": "Bullet Automation",
   "quest.tech.bullet_automation.subtitle": "For advanced tech players.",
