@@ -1,12 +1,4 @@
 {
-  "effectId.deceasedcraft.pistol_ammo_loot": "",
-  "effectId.deceasedcraft.shotgun_ammo_loot": "",
-  "effectId.deceasedcraft.rifle_ammo_loot": "",
-  "effectId.deceasedcraft.sniper_ammo_loot": "",
-  "effectId.deceasedcraft.special_ammo_loot": "",
-  "effectId.deceasedcraft.medic_loot": "",
-  "effectId.deceasedcraft.chef_loot": "",
-  "effectId.deceasedcraft.miner_loot": "",
   "login.message": "§6Press §b[F7] §6to open the guide book for guides and quests! If this is a new world, you will have §bone§6 day of safety. Please take your time to read the guide book!",
   "building.haunted.chest": "§cYou cannot loot chests until you've defeated the horde!",
   "building.haunted.enter": "§cYou've entered a horde building!",
