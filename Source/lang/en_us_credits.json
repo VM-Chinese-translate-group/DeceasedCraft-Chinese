@@ -1,10 +1,16 @@
 {
-  "quest.credits": "§6§lCredits",
-  "quest.credits.credits": "Credits",
-  "quest.credits.title": "The End!",
+  "quest.credits.credits.title": "Credits",
+  "quest.credits.desc_1": "We hope you've enjoyed DeceasedCraft!",
+  "quest.credits.desc_10": "&6The Discord Vet Team&r — Questbook, NPC Skins, Misc Modding Support",
+  "quest.credits.desc_11": "§6VM 汉化组§r — Chinese Translation",
+  "quest.credits.desc_2": "For feedback and suggestions, be sure to check out our §bDiscord§r.",
+  "quest.credits.desc_3": "Feel free to support us on §bPatreon§r as we continue improving the experience of this pack!",
+  "quest.credits.desc_4": "Special Thanks:",
+  "quest.credits.desc_5": "&6Bawnorton&r — Honorary Dev",
+  "quest.credits.desc_6": "&6lindor35&r — Item Textures",
+  "quest.credits.desc_7": "&6jamminek&r — Composer",
+  "quest.credits.desc_8": "&6McJty&r§r — The Lost Cities Mod Author",
+  "quest.credits.desc_9": "§6legsandarms§r — Undead Revamped Mod Author",
   "quest.credits.subtitle": "The Story Continues...",
-  "quest.credits.description_1": "We hope you've enjoyed DeceasedCraft!",
-  "quest.credits.description_2": "For feedback and suggestions, be sure to check out our §bDiscord§r.",
-  "quest.credits.description_3": "Feel free to support us on §bPatreon§r as we continue improving the experience of this pack!",
-  "quest.credits.description_4": "Special Thanks:\n§6MrJty§r - The Lost Cities Mod Author\n§6legsandarms§r - Undead Revamped Mod Author\n§6Bogdan_Off§r - Misc. Modding Support\n\nTranslators:\n§6VM 汉化组§r - zh_cn\n§6PrincessStelllar§r - pt_br\n§6BlackeagleYT§r - ua_uk\n§67starsoda§r - ko_kr\n§6Pundanya§r - ru_ru"
+  "quest.credits.title": "The End!"
 }

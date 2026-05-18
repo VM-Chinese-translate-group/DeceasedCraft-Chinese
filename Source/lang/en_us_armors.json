@@ -84,6 +84,7 @@
   "armors.biohazard.description_gooed": "§6 Grants Gooed Immunity",
   "armors.biohazard.description_toxic": "§6 Grants Toxicity Immunity",
   "armors.biohazard.description_insulated": "§e Grants Insulation",
+  "armors.biohazard.description_radiation": "§e Immune to Radiation",
   "tooltip.translation.spacecatasb.settitle.armors.swat.title": "SWAT",
   "armors.swat.description_ranged": "§d +25% Ranged Damage",
   "armors.swat.description_melee": "§a +25% Melee Damage",
