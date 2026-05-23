@@ -90,8 +90,8 @@
     "config.dcfixes.option.text_render_distance":"Text Render Distance",
     "config.dcfixes.option.text_render_distance.description":"The distance at which IV text (e.g. number plates) is rendered. The distance is calculated from the camera to the IV entity.\nDefault: 32.0",
     "config.dcfixes.title":"DeceasedCraft Fixes Config",
-    "dcfixes.quest.rewards":"Rewards",
-    "dcfixes.quest.tasks":"Tasks",
+    "dcfixes.quest.rewards":"奖励",
+    "dcfixes.quest.tasks":"任务",
     "tooltip.solcarrot.cheap.forgotten":"你想不起来它是什么味道了，但也许不值一试。",
     "tooltip.solcarrot.disabled.forgotten":"你想不起来它是什么味道了，但也许不值一试。",
     "tooltip.solcarrot.hearty.forgotten":"你想不起来它是什么味道了，要不尝尝？"
