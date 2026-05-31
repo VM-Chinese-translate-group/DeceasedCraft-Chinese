@@ -52,7 +52,7 @@ for kind, value, filename in RAW_RULES:
 
 SOURCE_PATH = Path("Source/original_lang/en_us.json")
 OUTPUT_DIR = Path("split_output")
-DEFAULT_FILE = "unassigned.json"
+DEFAULT_FILE = "en_us_unassigned.json"
 
 
 def load_json(path: Path) -> "OrderedDict[str, str]":
