@@ -1,0 +1,45 @@
+{
+  "enchantment.tacz_eo.bullseye": "要害打击",
+  "enchantment.tacz_eo.deep_impact": "深度冲击",
+  "enchantment.tacz_eo.firepower": "子弹威力",
+  "enchantment.tacz_eo.precision": "精准",
+  "enchantment.tacz_eo.punch_through": "贯穿",
+
+  "config.tacz_eo.title": "TACZ-附魔重做配置",
+  "config.tacz_eo.category.enchantment_balancing": "附魔平衡",
+  "config.tacz_eo.category.enchantment_balancing.tooltip": "调整本模组新增附魔平衡性的相关设置。",
+
+  "config.tacz_eo.option.max_level": "最大等级",
+  "config.tacz_eo.option.base_enchantability": "基础附魔能力",
+  "config.tacz_eo.option.base_enchantability.description": "获得1级该附魔所需的最低附魔能力。",
+  "config.tacz_eo.option.level_enchantability": "等级附魔能力",
+  "config.tacz_eo.option.level_enchantability.description": "此后每提升一级所需的额外附魔能力。",
+  "config.tacz_eo.option.enchantability_span": "附魔能力跨度",
+  "config.tacz_eo.option.enchantability_span.description": "此值加上基础与等级附魔能力，即为可获得该附魔的最大附魔能力上限。",
+
+  "config.tacz_eo.category.enchantment_balancing.group.bullseye": "“要害打击”附魔",
+  "config.tacz_eo.category.enchantment_balancing.group.bullseye.description": "爆头时，根据附魔等级提升弹丸伤害。",
+  "config.tacz_eo.option.bullseye_headshot_bonus": "爆头伤害加成",
+
+  "config.tacz_eo.category.enchantment_balancing.group.deep_impact": "“深度冲击”附魔",
+  "config.tacz_eo.category.enchantment_balancing.group.deep_impact.description": "根据附魔等级，提升弹丸的穿甲力。",
+  "config.tacz_eo.option.deep_impact_armor_piercing_bonus": "穿甲加成",
+
+  "config.tacz_eo.category.enchantment_balancing.group.firepower": "“子弹威力”附魔",
+  "config.tacz_eo.category.enchantment_balancing.group.firepower.description": "根据附魔等级，提升弹丸伤害。",
+  "config.tacz_eo.option.firepower_damage_multiplier": "伤害倍率",
+
+  "config.tacz_eo.category.enchantment_balancing.group.precision": "“精准”附魔",
+  "config.tacz_eo.category.enchantment_balancing.group.precision.description": "根据附魔等级，降低弹丸散布。",
+  "config.tacz_eo.option.precision_accuracy_bonus": "精度加成",
+
+  "config.tacz_eo.category.enchantment_balancing.group.punch_through": "“贯穿”附魔",
+  "config.tacz_eo.category.enchantment_balancing.group.punch_through.description": "根据附魔等级，提升弹丸的实体穿透数。",
+  "config.tacz_eo.option.punch_through_count": "穿透实体数",
+
+  "config.tacz_eo.category.enchantment_whitelisting": "附魔白名单",
+  "config.tacz_eo.category.enchantment_whitelisting.tooltip": "设置可使用各类附魔的武器白名单。",
+  "config.tacz_eo.category.enchantment_whitelisting.info": "由于YACL限制，若要从下方列表中添加或移除附魔，必须直接编辑配置文件。路径为：config/tacz_enchantments_overhaul.json5",
+  "config.tacz_eo.option.enchantment_whitelist": "%s",
+  "config.tacz_eo.option.enchantment_whitelist.description": "可附魔%s的枪械。使用'内容包ID:枪械ID'格式指定物品。示例：'tacz:aug'。"
+}
