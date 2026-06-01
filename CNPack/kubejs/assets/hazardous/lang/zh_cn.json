@@ -42,7 +42,7 @@
     "message.hazardous.geiger_counter.hazard_type":"显示危害类型：",
     "message.hazardous.geiger_counter.header":"盖革计数器",
     "message.hazardous.pills.attribute":"对应属性：",
-    "message.hazardous.pills.cured":"已治愈的剂量：%s",
+    "message.hazardous.pills.cured":"此次治愈的剂量：%s",
     "message.hazardous.pills.desc":"对于某种已配置的抗性属性，减少其在你体内已累积的剂量",
     "message.hazardous.pills.header":"抗辐射药丸",
     "message.hazardous.pills.heal":"每次使用后恢复的剂量：",
