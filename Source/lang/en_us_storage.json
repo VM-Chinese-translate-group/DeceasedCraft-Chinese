@@ -8,7 +8,7 @@
   "quest.storage.cores.desc_1": "&bConstruction&r and &cDestruction&r Cores are used in blocks that interact with the world (importers/exporters/grids).",
   "quest.storage.cores.desc_2": "You will need at least one of each if you're building the system from scratch, as they are used to make the Grid.",
   "quest.storage.cores.title": "Construction and Destruction Cores",
-  "quest.storage.craftinggrid.desc_1": "The &bCrafting Grid&r allows access to a crafting table, as well as enabling the storing and retrieing of &eitems&r from the Refined Storage Network.",
+  "quest.storage.craftinggrid.desc_1": "The &bCrafting Grid&r allows access to a crafting table, as well as enabling the storing and retrieval of &eitems&r from the Refined Storage Network.",
   "quest.storage.craftinggrid.desc_2": "Place it next to the &bcontroller&r, or connected via cable.",
   "quest.storage.craftinggrid.desc_3": "&6[Right-Click]&r to open up the crafting menu.",
   "quest.storage.craftinggrid.desc_4": "&7&oWhile you can obtain this item via crafting, consider looting it from &eT2 &7districts instead!",

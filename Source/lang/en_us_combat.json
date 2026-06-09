@@ -151,7 +151,7 @@
   "quest.combat.guns.gun_shots.desc_2": "Attaching a §bsilencer§r will reduce the range of sound created drastically.",
   "quest.combat.guns.gun_shots.title": "Gunshot Sounds",
   "quest.combat.guns.title": "Ranged Weapons",
-  "quest.combat.guns.workbench.desc_1": "All guns can be crafted at the §bgunsmith table§r.",
+  "quest.combat.guns.workbench.desc_1": "&bThree&r types of crafting tables are used to make guns — be sure to check them all!",
   "quest.combat.guns.workbench.subtitle": "I need guns. Lots of guns.",
   "quest.combat.guns.workbench.title": "Gunsmith Table",
   "quest.combat.melee.repairing.desc_1": "All weapons can be repaired by hand crafting, without needing an anvil. ",

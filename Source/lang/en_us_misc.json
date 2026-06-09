@@ -20,6 +20,8 @@
   "deceasedcraft.horde.horde_server_day_end": "server days.",
   "deceasedcraft.horde.horde_ingame_day_end": "ingame days.",
   "item.minecraft.enchanted_book": "Upgrade Parts",
+  "deceasedcraft.survivor.signal.id": "# %s",
+  "deceasedcraft.survivor.signal.pos": "Distance: %sm | X: %s Y: %s Z: %s",
   "deceasedcraft.survivor.signal.message": "Searching for survivor signals...",
   "deceasedcraft.survivor.signal.none": "No signals found.",
   "deceasedcraft.flyer.learn": "Data Registered - You can now locate §b%s§r using your Building Radar!"

@@ -1,8 +1,10 @@
 {
   "quest.credits.credits.title": "Credits",
-  "quest.credits.desc_1": "We hope you've enjoyed DeceasedCraft!",
-  "quest.credits.desc_10": "&6The Discord Vet Team&r — Questbook, NPC Skins, Misc Modding Support",
-  "quest.credits.desc_11": "§6VM 汉化组§r — Chinese Translation",
+  "quest.credits.desc_1": "We hope you've enjoyed &cDeceased&7Craft!",
+  "quest.credits.desc_10": "&6VM 汉化组§r — Chinese Translation",
+  "quest.credits.desc_11": "&6The Discord Vet Team&r",
+  "quest.credits.desc_12": "&o&7achrelois, jollysmol, bogdan_off, jeagui_, da1dal, diovllun, zeflohema, genesis_gaming112 kebep, mayobman, zhmykhnulo, snooploops_zombiesoup",
+  "quest.credits.desc_13": "Questbook, NPC Skins, Playtesting, Misc Modding Support",
   "quest.credits.desc_2": "For feedback and suggestions, be sure to check out our §bDiscord§r.",
   "quest.credits.desc_3": "Feel free to support us on §bPatreon§r as we continue improving the experience of this pack!",
   "quest.credits.desc_4": "Special Thanks:",
@@ -10,7 +12,7 @@
   "quest.credits.desc_6": "&6lindor35&r — Item Textures",
   "quest.credits.desc_7": "&6jamminek&r — Composer",
   "quest.credits.desc_8": "&6McJty&r§r — The Lost Cities Mod Author",
-  "quest.credits.desc_9": "§6legsandarms§r — Undead Revamped Mod Author",
+  "quest.credits.desc_9": "&6legsandarms§r — Undead Revamped Mod Author",
   "quest.credits.subtitle": "The Story Continues...",
   "quest.credits.title": "The End!"
 }
