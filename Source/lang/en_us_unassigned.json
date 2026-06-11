@@ -1,7 +1,7 @@
 {
   "deceasedcraft.difficulty.easy": "§aEasy Difficulty§r\n§a50%%§r reduced global enemy spawns.\n§a50%%§r less enemy health and damage.\n§a25%%§r more loot in all containers.",
   "deceasedcraft.difficulty.normal": "§fNormal Difficulty§r\nNo modifiers.\nThe §fstandard§r difficulty for this modpack.",
-  "deceasedcraft.difficulty.hard": "§cHard Difficulty§r\nRebalanced, §charder§r enemies in all districts.\nLoot in containers reduced by §c50%%§r.\nDeath will §creduce§r your max health from unique foods, requiring you to eat them again.\nMore §cfrequent§r, §cbuffed§r and §clonger§r horde waves.",
+  "deceasedcraft.difficulty.hard": "§cHard Difficulty§r\nRebalanced, §charder§r enemies in all districts.\nLoot in containers reduced by §c25%%§r.\nDeath will §creduce§r your max health from unique foods, requiring you to eat them again.\nMore §cfrequent§r, §cbuffed§r and §clonger§r horde waves.",
   "curios.identifier.meter": "Meter",
   "hazardtype.deceasedcraft.wasteland_radiation_type": "§cRadiation",
   "death.attack.deceasedcraft.radiation.death": "<player> died of radiation poisoning.",
