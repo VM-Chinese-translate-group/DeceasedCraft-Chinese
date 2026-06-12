@@ -1,4 +1,6 @@
 {
+  "effectId.deceasedcraft.badge_ranged_damage": "§d +25% Ranged Damage",
+  "effectId.deceasedcraft.badge_melee_damage": "§d +25% Melee Damage",
   "effectId.deceasedcraft.pistol_ammo_loot": "",
   "effectId.deceasedcraft.shotgun_ammo_loot": "",
   "effectId.deceasedcraft.rifle_ammo_loot": "",
@@ -19,6 +21,7 @@
   "deceasedcraft.horde.horde_day_start": "The horde comes for you in",
   "deceasedcraft.horde.horde_server_day_end": "server days.",
   "deceasedcraft.horde.horde_ingame_day_end": "ingame days.",
+  "deceasedcraft.horde.mutation": "§cThe infection mutates... Your survival timeline has permanently advanced by 15 days!",
   "item.minecraft.enchanted_book": "Upgrade Parts",
   "deceasedcraft.survivor.signal.id": "# %s",
   "deceasedcraft.survivor.signal.pos": "Distance: %sm | X: %s Y: %s Z: %s",
