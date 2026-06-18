@@ -59,12 +59,14 @@ jobs:
         id: commit
         run: |
           git rm --cached error_report.html || true
-          if [[ -n $(git status -s) ]]; then
-            git add .
+          git add .
+          # 使用 git diff-index 检查暂存区是否有真正的内容变化
+          if ! git diff-index --quiet HEAD --; then
             git commit -m '从Paratranz同步翻译'
             git push
             echo "changed=true" >> $GITHUB_OUTPUT
           else
+            echo "没有检测到任何翻译更新，跳过提交。"
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
