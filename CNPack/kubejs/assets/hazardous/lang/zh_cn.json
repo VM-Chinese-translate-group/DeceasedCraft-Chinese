@@ -27,7 +27,7 @@
     "message.hazardous.dosimeter.hazard_type":"显示危害类型：",
     "message.hazardous.dosimeter.header":"辐射剂量计",
     "message.hazardous.emission.carried":"携带时具有以下放射性：",
-    "message.hazardous.emission.checking":"正在检查携带的放射性……",
+    "message.hazardous.emission.checking":"正在检查携带此物品时的放射性……",
     "message.hazardous.filter.crafting":"也可以和一个损坏的防毒面具相合成",
     "message.hazardous.filter.desc":"用于修复损坏的防毒面具",
     "message.hazardous.filter.header":"防毒面具滤盒",
