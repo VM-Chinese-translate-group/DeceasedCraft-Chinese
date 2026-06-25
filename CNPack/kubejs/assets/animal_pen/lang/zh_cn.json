@@ -233,7 +233,7 @@
     "item.animal_pen.water_animal_container.release":"潜行并右击方块以释放动物",
     "item.animal_pen.water_animal_container.tip":"右击水生动物以捕捉",
     "item.animal_pen.water_animal_container.variants":"变种：%d",
-    "jei.animal_pen.animal_cage":"Right-click with Animal Cage to capture:",
+    "jei.animal_pen.animal_cage":"使用动物捕捉笼右击以捕捉：",
     "jei.animal_pen.animal_cage.info":"Right-click a mob to capture it. Crouch + Right-click a block to release it. Place in an Animal Pen to interact with captured animals.",
     "jei.animal_pen.bird_catcher":"Right-click with Aviary Net to capture:",
     "jei.animal_pen.bird_catcher.info":"Right-click a mob to capture it. Crouch + Right-click a block to release it. Place in an Aviary to interact with captured animals.",
