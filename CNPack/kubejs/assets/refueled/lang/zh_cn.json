@@ -36,8 +36,8 @@
     "message.command.set.heat.success":"成功将%s的发动机温度设置为%s",
     "message.command.set.heat.success.abszero":"成功冻结了%s的引擎，超过绝对零度",
     "message.command.success.config":"成功将%s添加为有效燃料，效率为%s%%",
-    "message.start_vehicle":"按%s启动车辆或按%s打开其GUI",
-    "sound.refueled.engine":"车辆运行",
+    "message.start_vehicle":"按%s启动载具或按%s打开其GUI",
+    "sound.refueled.engine":"载具运行",
     "tooltip.canister.amount":"%s mB",
     "tooltip.canister.fluid":"储能：%s",
     "tooltip.charge":"存储：%s FE"
