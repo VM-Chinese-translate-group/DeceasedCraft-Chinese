@@ -12,22 +12,12 @@ GH_TOKEN: str = os.getenv("GH_TOKEN", "")
 PROJECT_ID: str = os.getenv("PROJECT_ID", "")
 FILE_URL: str = f"https://paratranz.cn/api/projects/{PROJECT_ID}/files/"
 
-# --- 新增配置项 ---
-# 1. 在 Paratranz 项目中，存放需要合并的 json 文件的目录路径。
-#    请确保以 '/' 结尾。脚本会合并此目录下所有 .json 文件。
-#    例如: "kubejs/assets/kubejs/lang/parts/"
 MERGE_SOURCE_PATH: str = "kubejs/assets/vm/lang/"
-
-# 2. 合并后生成的单一 zh_cn.json 文件的完整路径和文件名。
-#    例如: "CNPack/kubejs/assets/kubejs/lang/zh_cn.json"
 MERGE_OUTPUT_FILE: str = "CNPack/kubejs/assets/deceasedcraft/lang/zh_cn.json"
-# --- 新增配置项结束 ---
-
 
 if not TOKEN or not PROJECT_ID:
     raise EnvironmentError("环境变量 API_TOKEN 或 PROJECT_ID 未设置。")
 
-# 初始化列表和字典
 file_id_list: list[int] = []
 file_path_list: list[str] = []
 zh_cn_list: list[dict[str, str]] = []
@@ -40,23 +30,15 @@ def fetch_json(url: str, headers: dict[str, str]) -> list[dict[str, str]]:
 
 
 def translate(file_id: int) -> Tuple[list[str], list[str]]:
-    """
-    获取指定文件的翻译内容并返回键值对列表
-
-    :param file_id: 文件ID
-    :return: 包含键和值的元组列表
-    """
     url = f"https://paratranz.cn/api/projects/{PROJECT_ID}/files/{file_id}/translation"
     headers = {"Authorization": TOKEN, "accept": "*/*"}
     translations = fetch_json(url, headers)
 
     keys, values = [], []
-
     for item in translations:
         keys.append(item["key"])
         translation = item.get("translation", "")
         original = item.get("original", "")
-        # 优先使用翻译内容，缺失时根据 stage 使用原文
         values.append(
             original if item["stage"] in [0, -1] or not translation else translation
         )
@@ -65,15 +47,12 @@ def translate(file_id: int) -> Tuple[list[str], list[str]]:
 
 
 def get_files() -> None:
-    """
-    获取项目中的文件列表并提取文件ID和路径
-    """
     headers = {"Authorization": TOKEN, "accept": "*/*"}
     files = fetch_json(FILE_URL, headers)
-
     for file in files:
         file_id_list.append(file["id"])
         file_path_list.append(file["name"])
+
 
 def set_nested_value(d: dict, path_str: str, value: str, delimiter: str = "->"):
     """
@@ -89,73 +68,75 @@ def set_nested_value(d: dict, path_str: str, value: str, delimiter: str = "->"):
     curr[keys[-1]] = value
 
 
-def save_translation(zh_cn_dict: dict[str, str], path: Path) -> None:
+def build_nested_dict(flat_dict: dict[str, str]) -> dict:
     """
-    保存翻译内容到指定的 JSON 文件
+    将带有 '->' 的扁平字典整体还原为层级嵌套字典
+    """
+    nested_res = {}
+    nested_count = 0
+    for k, v in flat_dict.items():
+        if "->" in k:
+            set_nested_value(nested_res, k, v, delimiter="->")
+            nested_count += 1
+        else:
+            nested_res[k] = v
+    print(f"[DEBUG] 字典还原完成，共有 {nested_count} 个键使用了 '->' 层级分隔符展开。")
+    return nested_res
 
-    :param zh_cn_dict: 翻译内容的字典
-    :param path: 原始文件路径
-    """
+
+def save_translation(zh_cn_dict: dict[str, str], path: Path) -> None:
     dir_path = Path("CNPack") / path.parent
     if "vm" in str(dir_path):
         dir_path = Path(str(dir_path).replace("vm", "deceasedcraft"))
     dir_path.mkdir(parents=True, exist_ok=True)
     file_path = dir_path / "zh_cn.json"
     source_path = str(file_path).replace("zh_cn.json", "en_us.json").replace("CNPack", "Source")
-    
+
+    print(f"[DEBUG] 正在处理文件: {path}")
+    print(f"[DEBUG] 目标保存位置: {file_path}")
+    print(f"[DEBUG] 尝试匹配源文件: {source_path}")
+
     with open(file_path, "w", encoding="UTF-8") as f:
         try:
             with open(source_path, "r", encoding="UTF-8") as f1:
                 source_json: dict = json.load(f1)
-            
-            # 遍历从 Paratranz 拿到的平铺字典，并将其写入源文件的嵌套结构中
+            print(f"[DEBUG] 成功读取源文件: {source_path}")
+
             for key, val in zh_cn_dict.items():
                 if "->" in key:
                     set_nested_value(source_json, key, val, delimiter="->")
                 else:
                     source_json[key] = val
-                    
+
             json.dump(source_json, f, ensure_ascii=False, indent=4, separators=(",", ":"))
+            print(f"[SUCCESS] 已按 Source 原文件层级合并保存: {file_path}")
         except IOError:
-            print(f"{source_path}路径不存在，文件按首字母排序！")
-            json.dump(zh_cn_dict, f, ensure_ascii=False, indent=4, separators=(",", ":"), sort_keys=True)
+            print(f"[WARNING] 源文件不存在: {source_path}，转为自动构建嵌套结构模式")
+            nested_data = build_nested_dict(zh_cn_dict)
+            json.dump(nested_data, f, ensure_ascii=False, indent=4, separators=(",", ":"))
+            print(f"[SUCCESS] 自动嵌套构建完成并保存: {file_path}")
 
 
 def process_translation(file_id: int, path: Path) -> dict[str, str]:
-    """
-    处理单个文件的翻译，返回翻译字典
-
-    :param file_id: 文件ID
-    :param path: 文件路径
-    :return: 翻译内容字典
-    """
     keys, values = translate(file_id)
 
-    # 手动处理文本的替换，避免反斜杠被转义
     try:
         with open("Source/" + str(path), "r", encoding="UTF-8") as f:
             zh_cn_dict = json.load(f)
     except IOError:
         zh_cn_dict = {}
 
-    # 检查路径是否包含quests
     is_quest_file = "vm" in str(path)
 
     for key, value in zip(keys, values):
-        # 确保替换 \\u00A0 和 \\n
-        value = re.sub(r'\\"','\"',value)
-
-        # 对quest文件进行特殊处理
+        value = re.sub(r'\\"', '"', value)
         if is_quest_file and "image" not in value:
             value = value.replace(" ", "\u00A0")
-        
-        # 保存替换后的值
         zh_cn_dict[key] = value
-    
+
     return zh_cn_dict
 
 
-# Convert JSON data into an NBT compound structure
 def json_to_nbt(data):
     if isinstance(data, dict):
         return Compound({key: json_to_nbt(value) for key, value in data.items()})
@@ -169,9 +150,8 @@ def json_to_nbt(data):
         raise ValueError(f"Unsupported data type: {type(data)}")
 
 
-# Pretty-print SNBT with indentation and wrap all values in double quotes
 def format_snbt(nbt_data, indent=0):
-    INDENT_SIZE = 4  # Number of spaces for each indent level
+    INDENT_SIZE = 4
     indent_str = ' ' * indent
 
     if isinstance(nbt_data, Compound):
@@ -180,16 +160,13 @@ def format_snbt(nbt_data, indent=0):
             formatted.append(f'\n{indent_str}{" " * INDENT_SIZE}{key}:{format_snbt(value, indent + INDENT_SIZE)}')
         formatted.append(f'\n{indent_str}}}')
         return ''.join(formatted)
-
     elif isinstance(nbt_data, nbtlib.tag.List):
         formatted = ['[']
         for item in nbt_data:
             formatted.append(f'\n{indent_str}{" " * INDENT_SIZE}{format_snbt(item, indent + INDENT_SIZE)}')
         formatted.append(f'\n{indent_str}]')
         return ''.join(formatted)
-
     else:
-        # Wrap all primitive types (String/Int) in double quotes
         return f'"{str(nbt_data)}"'
 
 
@@ -230,47 +207,52 @@ def normal_json2_ftb_desc(origin_en_us):
 def main() -> None:
     get_files()
     ftbquests_dict = {}
-    
-    # --- 新增逻辑 ---
-    # 用于存放所有待合并文件的键值对
     merged_translations: Dict[str, str] = {}
-    # --- 新增逻辑结束 ---
 
     for file_id, path_str in zip(file_id_list, file_path_list):
-        if "TM" in path_str:  # 跳过 TM 文件
+        if "TM" in path_str:
             continue
-        
+
         path = Path(path_str)
         zh_cn_dict = process_translation(file_id, path)
 
-        # --- 修改的核心逻辑 ---
-        # 检查文件路径是否是需要合并的路径
         if path_str.startswith(MERGE_SOURCE_PATH) and path_str.endswith(".json"):
-            # 如果是，则更新到合并字典中，暂不保存
             merged_translations.update(zh_cn_dict)
-            print(f"已暂存待合并文件：{path_str}")
+            print(f"[INFO] 已暂存待合并文件：{path_str} (当前累计 key 数: {len(merged_translations)})")
         else:
-            # 如果不是，则按原逻辑处理
             zh_cn_list.append(zh_cn_dict)
             if "kubejs/assets/quests/lang/" in path_str:
                 ftbquests_dict.update(zh_cn_dict)
             save_translation(zh_cn_dict, path)
-            print(f"已从Paratranz下载到仓库：{re.sub('en_us.json', 'zh_cn.json', str(path))}")
-        # --- 修改结束 ---
+            print(f"[INFO] 已完成保存：{re.sub('en_us.json', 'zh_cn.json', str(path))}")
 
-    # --- 新增逻辑 ---
-    # 在循环结束后，如果合并字典中有内容，则将其排序后写入目标文件
     if merged_translations:
-        print(f"正在合并 {len(merged_translations)} 个键值对到 {MERGE_OUTPUT_FILE}...")
+        print(f"\n[INFO] 开始处理合并文件导出 -> {MERGE_OUTPUT_FILE}")
         output_path = Path(MERGE_OUTPUT_FILE)
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        
-        with open(output_path, "w", encoding="UTF-8") as f:
-            json.dump(merged_translations, f, ensure_ascii=False, indent=4, separators=(",", ":"))
-        print(f"成功合并并保存文件到：{MERGE_OUTPUT_FILE}")
-    # --- 新增逻辑结束 ---
 
-    if(len(ftbquests_dict) > 0):
+        source_path = str(output_path).replace("zh_cn.json", "en_us.json").replace("CNPack", "Source")
+        print(f"[DEBUG] 合并文件尝试匹配源文件: {source_path}")
+
+        try:
+            with open(source_path, "r", encoding="UTF-8") as f1:
+                source_json: dict = json.load(f1)
+            print(f"[DEBUG] 成功读取合并文件的 Source 源文件: {source_path}")
+            for key, val in merged_translations.items():
+                if "->" in key:
+                    set_nested_value(source_json, key, val, delimiter="->")
+                else:
+                    source_json[key] = val
+            output_data = source_json
+        except IOError:
+            print(f"[WARNING] 无法找到源文件 {source_path}，将从合并的键自动构建嵌套结构")
+            output_data = build_nested_dict(merged_translations)
+
+        with open(output_path, "w", encoding="UTF-8") as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=4, separators=(",", ":"))
+        print(f"[SUCCESS] 合并文件写入成功：{MERGE_OUTPUT_FILE}\n")
+
+    if len(ftbquests_dict) > 0:
         snbt_dict = normal_json2_ftb_desc(ftbquests_dict)
         json_data = escape_quotes(snbt_dict)
         nbt_data = json_to_nbt(json_data)
