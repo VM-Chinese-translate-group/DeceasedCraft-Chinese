@@ -75,6 +75,19 @@ def get_files() -> None:
         file_id_list.append(file["id"])
         file_path_list.append(file["name"])
 
+def set_nested_value(d: dict, path_str: str, value: str, delimiter: str = "->"):
+    """
+    根据带分隔符的 key 路径（如 "entries->qmp_a.120mm_high.description"）
+    递归设置嵌套字典中的值。
+    """
+    keys = path_str.split(delimiter)
+    curr = d
+    for key in keys[:-1]:
+        if key not in curr or not isinstance(curr[key], dict):
+            curr[key] = {}
+        curr = curr[key]
+    curr[keys[-1]] = value
+
 
 def save_translation(zh_cn_dict: dict[str, str], path: Path) -> None:
     """
@@ -85,19 +98,23 @@ def save_translation(zh_cn_dict: dict[str, str], path: Path) -> None:
     """
     dir_path = Path("CNPack") / path.parent
     if "vm" in str(dir_path):
-        dir_path = Path(str(dir_path).replace("vm","deceasedcraft"))
+        dir_path = Path(str(dir_path).replace("vm", "deceasedcraft"))
     dir_path.mkdir(parents=True, exist_ok=True)
     file_path = dir_path / "zh_cn.json"
     source_path = str(file_path).replace("zh_cn.json", "en_us.json").replace("CNPack", "Source")
+    
     with open(file_path, "w", encoding="UTF-8") as f:
         try:
             with open(source_path, "r", encoding="UTF-8") as f1:
                 source_json: dict = json.load(f1)
-            keys = source_json.keys()
-            for key in keys:
-                # 仅当key存在于翻译字典时才更新，防止KeyError
-                if key in zh_cn_dict:
-                    source_json[key] = zh_cn_dict[key]
+            
+            # 遍历从 Paratranz 拿到的平铺字典，并将其写入源文件的嵌套结构中
+            for key, val in zh_cn_dict.items():
+                if "->" in key:
+                    set_nested_value(source_json, key, val, delimiter="->")
+                else:
+                    source_json[key] = val
+                    
             json.dump(source_json, f, ensure_ascii=False, indent=4, separators=(",", ":"))
         except IOError:
             print(f"{source_path}路径不存在，文件按首字母排序！")
