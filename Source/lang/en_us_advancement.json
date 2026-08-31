@@ -193,8 +193,8 @@
   "deceasedcraft.advancement.description.multi_alienresearch": "Visit the Abandoned Hangar",
   "deceasedcraft.advancement.title.multi_earthcomplex": "Earth Complex",
   "deceasedcraft.advancement.description.multi_earthcomplex": "Visit the Earth Complex",
-  "deceasedcraft.advancement.title.multi_airforcebase": "Airforce Base",
-  "deceasedcraft.advancement.description.multi_airforcebase": "Visit the Airforce Base",
+  "deceasedcraft.advancement.title.multi_airforcebase": "C-X Military Complex",
+  "deceasedcraft.advancement.description.multi_airforcebase": "Visit the C-X Military Complex",
   "deceasedcraft.advancement.title.multi_nuclearpowerplant": "Nuclear Power Plant",
   "deceasedcraft.advancement.description.multi_nuclearpowerplant": "Visit the Nuclear Power Plant",
   "deceasedcraft.advancement.title.npc_gramps": "The Old Veteran",
@@ -215,6 +215,8 @@
   "deceasedcraft.advancement.description.npc_charlie": "Find Charlie in the Retail District",
   "deceasedcraft.advancement.title.npc_jackson": "The Final Order",
   "deceasedcraft.advancement.description.npc_jackson": "Find Jackson in the Wasteland",
+  "deceasedcraft.advancement.title.npc_piko": "The Lone Shopkeeper",
+  "deceasedcraft.advancement.description.npc_piko": "Find Piko in the Retail District",
   "deceasedcraft.advancement.title.npc_alto": "The Gateway Beyond",
   "deceasedcraft.advancement.description.npc_alto": "Find Alto in the Wasteland"
 }
