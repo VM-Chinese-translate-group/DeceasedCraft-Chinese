@@ -59,7 +59,18 @@
     "subtitles.diggerambt_top":"掘地怪：吱吱叫",
     "subtitles.stunnerhurt":"震光怪：受伤",
     "item.deaceased.flayedmanhead_spawn_egg":"剥皮怪头部刷怪蛋",
-    "death.attack.choke":"%1$s被挤压致死",
+    "death.attack.choke":"%1$s因窒息而死",
     "effect.deaceased.wrapped":"束缚",
-    "effect.deaceased.gale":"狂风"
+    "effect.deaceased.gale":"狂风",
+    "subtitles.reelerhurt":"卷轮怪：受伤",
+    "item.deaceased.tougueentity_spawn_egg":"卷轮怪之舌刷怪蛋",
+    "effect.deaceased.pinned":"缠定",
+    "item.deaceased.reeler_spawn_egg":"卷轮怪刷怪蛋",
+    "subtitles.reelersoot":"卷轮怪：射出",
+    "subtitles.cog":"卷轮：转动",
+    "subtitles.reelerdie":"卷轮怪：死亡",
+    "entity.deaceased.tougueentity":"卷轮怪之舌",
+    "subtitles.spin":"卷轮：转动",
+    "entity.deaceased.reeler":"卷轮怪",
+    "subtitles.reelerambt":"卷轮怪：闲置"
 }
