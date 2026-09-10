@@ -58,5 +58,15 @@
     "message.hazardous.protection.durability":"每次防护会消耗1点耐久度",
     "message.hazardous.protection.level":"防护率：%.0f%%",
     "message.hazardous.protection.type":"防护源：%s",
-    "message.hazardous.protection.worn":"穿戴时防护以下危害："
+    "message.hazardous.protection.worn":"穿戴时防护以下危害：",
+    "block.hazardous.radiation_purifier_base":"辐射净化基件",
+    "block.hazardous.radiation_purifier_controller":"辐射净化控制器",
+    "effect.hazardous.hazard_immunity":"危害免疫",
+    "gui.hazardous.radiation_purifier":"辐射净化",
+    "gui.hazardous.radiation_purifier.active":"状态：已激活",
+    "gui.hazardous.radiation_purifier.no_power":"状态：供电不足",
+    "gui.hazardous.radiation_purifier.radius":"免疫半径：%s格",
+    "gui.hazardous.radiation_purifier.scan_interval":"玩家检测间隔：%s刻",
+    "gui.hazardous.radiation_purifier.unformed":"状态：缺少基件",
+    "message.hazardous.protection.low_durability":"警告：%s的剩余耐久度低于10%%！"
 }
