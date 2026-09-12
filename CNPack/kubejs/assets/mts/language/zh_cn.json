@@ -280,7 +280,7 @@
         "interact.fuelpump.noengine":"此载具中没有发动机。安装不同燃油类型的发动机会重置油箱，安装正确的发动机以避免燃油损失！",
         "interact.fuelpump.wrongengines":"此泵中的内容不是载具发动机的有效燃油。请参阅手册。",
         "interact.fuelpump.connect":"已连接并正在加油。",
-        "interact.fuelpump.full":"载具电量已满，正在断开连接。",
+        "interact.fuelpump.full":"载具已充满，正在断开连接。",
         "interact.fuelpump.complete":"载具已加满，连接已断开。",
         "interact.fuelpump.empty":"泵为空，连接已断开。",
         "interact.fuelpump.disconnect":"连接已断开，加油已停止。",
