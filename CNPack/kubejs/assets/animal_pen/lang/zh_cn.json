@@ -300,8 +300,8 @@
     "jei.animal_pen.item_info_bird_catcher":"可用捕鸟网捕捉",
     "jei.animal_pen.animal_cage":"使用动物捕捉笼右击以捕捉：",
     "jei.animal_pen.water_animal_container":"使用捕捉罐右击水生动物以捕捉：",
-    "jei.animal_pen.bird_catcher":"Right-click with Aviary Net to capture:",
-    "jei.animal_pen.animal_cage.info":"Right-click a mob to capture it. Crouch + Right-click a block to release it. Place in an Animal Pen to interact with captured animals.",
+    "jei.animal_pen.bird_catcher":"使用捕鸟网右击以捕捉：",
+    "jei.animal_pen.animal_cage.info":"右击生物以将其捕捉。对着方块潜行+右击以将其释放。将其放入动物围栏即可进行交互。",
     "jei.animal_pen.water_animal_container.info":"右击生物以将其捕捉。对着方块潜行+右击以将其释放。将其放入水族箱即可进行交互。",
-    "jei.animal_pen.bird_catcher.info":"Right-click a mob to capture it. Crouch + Right-click a block to release it. Place in an Aviary to interact with captured animals."
+    "jei.animal_pen.bird_catcher.info":"右击生物以将其捕捉。对着方块潜行+右击以将其释放。将其放入鸟笼即可进行交互。"
 }
