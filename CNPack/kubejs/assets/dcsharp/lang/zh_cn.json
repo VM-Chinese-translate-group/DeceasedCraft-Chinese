@@ -4,7 +4,7 @@
     "tooltip.solcarrot.hearty.forgotten":"你想不起来它是什么味道了，要不尝尝？",
     "tooltip.solcarrot.disabled.forgotten":"你想不起来它是什么味道了，但也许不值一试。",
     "tooltip.solcarrot.cheap.forgotten":"你想不起来它是什么味道了，但也许不值一试。",
-    "tooltip.dcsharp.nameless_trinkets.reforger_1":"快捷栏内的物品会随时间自动修复。",
+    "tooltip.dcsharp.nameless_trinkets.reforger_1":"快捷栏内的前5个物品会随时间自动修复。",
     "dcsharp.attribute.name.infection_resistance":"感染抗性",
     "dcsharp.attribute.name.infection_chance":"感染概率",
     "dcsharp.apocalypsenow.night_vision_keybind":"开关“Apocalypse Now”夜视",
