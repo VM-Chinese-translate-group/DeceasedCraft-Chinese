@@ -1,0 +1,27 @@
+{
+  "item.cable_facades.facade_wrench": "伪装扳手",
+  
+  "cable_facades.tooltip.toggle_transparency": "右击切换/禁用伪装板透明效果",
+  "cable_facades.tooltip.current_state": "当前状态：",
+  "cable_facades.tooltip.enabled": "已启用",
+  "cable_facades.tooltip.disabled": "已禁用",
+  
+  "cable_facades.message.transparency_enabled": "伪装板透明效果",
+  "cable_facades.message.shaders_warning": "⚠ ",
+  "cable_facades.message.shaders_detected": "检测到光影：",
+  "cable_facades.message.transparency_may_not_work": "伪装板透明效果可能无法正常生效",
+  "cable_facades.message.directional_facade_update": "Cable Facades 2.0新增了定向伪装板。此提示仅显示一次，快去体验吧！",
+  
+  "cable_facades.facade.name_prefix": "伪装板 - ",
+  "cable_facades.facade.empty": "伪装板 - 空",
+  "cable_facades.directional_facade.name_prefix": "定向伪装板 - ",
+  "cable_facades.directional_facade.empty": "定向伪装板 - 空",
+  "item.cable_facades.directional_facade": "定向伪装板",
+  "cable_facades.creative_tab": "线缆伪装",
+  
+  "cable_facades.error.cannot_facade_itself": "无法将方块伪装为其自身",
+  "cable_facades.error.block_disabled": "该方块无法用作伪装板（已在配置中禁用）",
+  
+  "cable_facades.jei.facade_any_block": "伪装板 - 任意方块",
+  "cable_facades.jei.any_block": "任意方块"
+}

@@ -1,0 +1,17 @@
+{
+  "compressedengineering.jei.assembler_title": "装配机",
+  "compressedengineering.jei.excavator_title": "挖掘机矿脉",
+  "compressedengineering.jei.basefailchance": "废石基础概率：%s",
+  "compressedengineering.jei.basefailchance_nospoils": "无产出概率：%s",
+  "compressedengineering.jei.outputchance": "概率：%s",
+  "compressedengineering.jei.dimensions_list": "允许的维度ID：",
+  "compressedengineering.jei.spoils_guide": "挖掘机开采时可能产出失败，转而产出废石。该判定会执行两次：第一次基于矿脉的基础失败概率，第二次基于饱和度概率（取决于挖掘机与矿脉中心的距离）。",
+  "compressedengineering.jei.core_sample_disclaimer": "免责声明：此岩芯样本仅作示例，不代表当前世界的实际矿脉。",
+  "compressedengineering.jei.vein_weight_1": "权重：%s",
+  "compressedengineering.jei.vein_weight_2": "权重越高，该矿脉相较其他矿脉的生成频率越高。",
+  "compressedengineering.jei.blastfuel": "加装高炉预热器后的燃烧时间：",
+  "compressedengineering.jei.blastfuel.hover": "<- 更多信息",
+  "compressedengineering.jei.no_preheaters": "无预热器：%s秒（%s倍速）",
+  "compressedengineering.jei.one_preheater": "单预热器：%s秒（%s倍速）",
+  "compressedengineering.jei.both_preheaters": "双预热器：%s秒（%s倍速）"
+}

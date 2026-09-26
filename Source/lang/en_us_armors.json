@@ -1,7 +1,7 @@
 {
   "armors.fullset.description": "§6 Full Set Effect:",
   "tooltip.translation.spacecatasb.settitle.armors.anarchist.title": "Anarchist",
-  "armors.anarchist.description": "§a+0.5 Luck",
+  "armors.anarchist.description": "§a+33% chance to have extra loot",
   "tooltip.translation.spacecatasb.settitle.armors.army_general.title": "Army General",
   "armors.army_general.description_damage": "§a +50% Melee Damage",
   "armors.army_general.description_as": "§a +15% Attack Speed",

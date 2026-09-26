@@ -1,0 +1,17 @@
+{
+  "block.engtoolup.storage_drill": "钻机块",
+  "item.engtoolup.magnetic_drill_extender": "磁力钻机延伸器",
+  "item.engtoolup.steel_spring": "钢弹簧",
+  "item.engtoolup.lead_drillhead": "铅钻头",
+  "item.engtoolup.prospector_box": "勘探箱",
+  "item.engtoolup.prospector_drillhead": "勘探钻头",
+  "item.engtoolup.flashlight": "手电筒",
+  "item.engtoolup.fluid_sensor": "流体传感器",
+  "item.engtoolup.antiblast_plate": "防爆板",
+  "itemGroup.engtoolup": "工程师工具升级",
+  "manual.immersiveengineering.engineers_tool_upgrades": "工程师工具升级",
+  "key.categories.engtoolup": "工程师工具升级",
+  "key.engtoolup.openManualEntry": "打开手册条目",
+  "tooltip.engtoolup.openManualEntry": "按住%s查阅",
+  "tooltip.engtoolup.noKeyToManual": "设置按键以查阅"
+}
