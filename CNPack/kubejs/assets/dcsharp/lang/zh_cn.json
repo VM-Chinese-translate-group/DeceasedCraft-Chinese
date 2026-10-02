@@ -182,5 +182,14 @@
     "config.dcsharp.category.debug.chunk_query":"Chunk Query",
     "config.dcsharp.category.debug.chunk_query.description":"Log the stacktrace of methods that ask for a chunk that is not loaded\nDefault: False",
     "config.dcsharp.category.debug.monitor_iv_ticking":"Monitor IV Ticking",
-    "config.dcsharp.category.debug.monitor_iv_ticking.description":"Log when an IV vehicle ticks outside of loaded chunks\nDefault: False"
+    "config.dcsharp.category.debug.monitor_iv_ticking.description":"Log when an IV vehicle ticks outside of loaded chunks\nDefault: False",
+    "dcsharp.loading.scanning":"正在寻找出生点",
+    "dcsharp.loading.highways":"正在规划高速公路",
+    "dcsharp.loading.preparing":"已找到出生点 - 正在准备附近区块",
+    "dcsharp.loading.chunks":"正在生成出生点区块",
+    "dcsharp.loading.survey":"已检查%s个区块 - 生物群系采样%s次",
+    "dcsharp.loading.network":"已找到%s个公路枢纽 - 已规划%s个路段",
+    "dcsharp.loading.legend":"绿色：郊区 - 金色：道路 - +: 当前搜索位置",
+    "dcsharp.loading.position":"区块坐标：%s，%s",
+    "commands.dcsharp.un_force_load_all_chunks":"Successfully un-force-loaded %s chunks in '%s'"
 }

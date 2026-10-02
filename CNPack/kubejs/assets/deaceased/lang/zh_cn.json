@@ -72,5 +72,20 @@
     "entity.deaceased.tougueentity":"卷轮怪之舌",
     "subtitles.spin":"卷轮：转动",
     "entity.deaceased.reeler":"卷轮怪",
-    "subtitles.reelerambt":"卷轮怪：闲置"
+    "subtitles.reelerambt":"卷轮怪：闲置",
+    "item.deaceased.visage_pod_spawn_egg":"狰狞巨脸的刺舌刷怪蛋刷怪蛋",
+    "subtitles.visagedeath":"狰狞巨脸：死亡",
+    "item.deaceased.great_visage_spawn_egg":"狰狞巨脸刷怪蛋",
+    "subtitles.visage_screan":"狰狞巨脸：咆哮",
+    "entity.deaceased.visage_harpoon":"狰狞巨脸的刺舌",
+    "subtitles.tunnlingsound":"挖掘声",
+    "death.attack.visage_piercing.item":"%1$s被%2$s用%3$s扎穿了",
+    "death.attack.visage_piercing":"%1$s被带刺的触手扎穿了",
+    "item.deaceased.visage_harpoon_spawn_egg":"狰狞巨脸的刺舌刷怪蛋",
+    "entity.deaceased.great_visage":"狰狞巨脸",
+    "death.attack.visage_piercing.player":"%1$s被%2$s扎穿了",
+    "subtitles.visage_ambt":"狰狞巨脸：闲置",
+    "subtitles.visagescream":"狰狞巨脸：尖啸",
+    "entity.deaceased.visage_pod":"狰狞巨脸的卵囊",
+    "subtitles.visagehurt":"狰狞巨脸：受伤"
 }
