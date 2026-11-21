@@ -1,0 +1,7 @@
+{
+    "enchantment.shield_overhaul.vigor":"强势",
+    "enchantment.shield_overhaul.vigor.desc":"盾击能造成更强的击退，力度随附魔等级而提高。",
+    "effect.shield_overhaul.stun":"击晕",
+    "effect.shield_overhaul.stun_immunity":"免疫击晕",
+    "effect.shield_overhaul.stun.description":"目标无法移动、使用物品或攻击。"
+}
